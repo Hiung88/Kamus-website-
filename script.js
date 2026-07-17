@@ -1,0 +1,1 @@
+const data=[{cn:'你好',py:'nǐ hǎo',id:'Halo'}];const l=document.getElementById('list');function r(f=''){l.innerHTML=data.filter(x=>x.id.toLowerCase().includes(f.toLowerCase())).map(x=>`<p><b>${x.id}</b> - ${x.cn} (${x.py})</p>`).join('')}document.getElementById('q').oninput=e=>r(e.target.value);r();
